@@ -1,0 +1,52 @@
+{
+  "name": "react-moonphase",
+  "version": "1.0.0",
+  "description": "Display lunar phase with React and Pixi.js",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production",
+    "eslint": "eslint src/*.js src/*.jsx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikolas/react-moonphase.git"
+  },
+  "keywords": [
+    "astronomy"
+  ],
+  "author": "Nikolas Nyby",
+  "license": "GPL-3.0+",
+  "bugs": {
+    "url": "https://github.com/nikolas/react-moonphase/issues"
+  },
+  "homepage": "https://github.com/nikolas/react-moonphase#readme",
+  "dependencies": {
+    "@babel/cli": "^7.0.0",
+    "pixi.js": "~4.8.2",
+    "react": "~16.5.2",
+    "react-dom": "~16.5.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.0",
+    "babel-jest": "^23.4.2",
+    "babel-loader": "^8.0.0",
+    "eslint": "^5.1.0",
+    "eslint-plugin-react": "~7.10.0",
+    "jest": "^23.5.0",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.0.8"
+  },
+  "babel": {
+    "presets": [
+      "@babel/env",
+      "@babel/react"
+    ]
+  }
+}

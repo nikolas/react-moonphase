@@ -127,8 +127,6 @@ export default class MoonPhaseView extends React.Component {
     }
     drawPhase(leftShade, rightShade, phase) {
         if (phase <= 0.5) {
-            //leftShade.rotation = 0;
-            //rightShade.rotation = 0;
             const scale = 1 - (phase * 4);
             leftShade.scale.x = 1;
             leftShade.position.x = 0;

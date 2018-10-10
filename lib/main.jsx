@@ -7,7 +7,7 @@ class Main extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            moonPhase: 0
+            moonPhase: -1
         };
     }
     render() {

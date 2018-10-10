@@ -12,19 +12,20 @@ class Main extends React.Component {
     }
     render() {
         return (
-            <React.Fragment>
+            <div className="col-sm-4">
                 <MoonPhaseView
                     moonPhase={this.state.moonPhase}
                     onMoonPhaseUpdate={this.onMoonPhaseUpdate.bind(this)} />
                 <input
                     type="range"
+                    className="form-control-range"
                     name="moonPhase"
                     min={-Math.PI}
                     max={Math.PI}
                     step={0.01}
                     defaultValue={0}
                     onChange={this.handleInputChange.bind(this)} />
-            </React.Fragment>
+            </div>
         );
     }
     handleInputChange(event) {

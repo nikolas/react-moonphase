@@ -2,11 +2,11 @@
   "name": "react-moonphase",
   "version": "1.0.0",
   "description": "Display lunar phase with React and Pixi.js",
-  "main": "main.js",
+  "main": "build/index.js",
   "scripts": {
     "dev": "webpack --mode development --watch",
-    "build": "webpack --mode production",
-    "eslint": "eslint src/*.js src/*.jsx"
+    "build": "babel lib -d build",
+    "eslint": "eslint lib/*.js lib/*.jsx"
   },
   "repository": {
     "type": "git",

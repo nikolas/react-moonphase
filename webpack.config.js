@@ -2,11 +2,11 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-    entry: './src/main.jsx',
+    entry: './lib/main.jsx',
     mode: process.env.WEBPACK_SERVE ? 'development' : 'production',
     output: {
-        path: path.resolve(__dirname, 'docs/js'),
-        filename: 'bundle.js'
+        path: path.resolve(__dirname, 'build'),
+        filename: '.js'
     },
     resolve: {
         extensions: ['*', '.js', '.jsx']
@@ -15,7 +15,7 @@ module.exports = {
         rules: [
             {
                 test: /\.(js|jsx)$/,
-                include: path.resolve(__dirname, 'src'),
+                include: path.resolve(__dirname, 'lib'),
                 exclude: /node_modules/,
                 use: ['babel-loader']
             }

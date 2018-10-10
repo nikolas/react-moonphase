@@ -42,7 +42,7 @@ function (_React$Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Main).call(this, props));
     _this.state = {
-      moonPhase: 0
+      moonPhase: -1
     };
     return _this;
   }

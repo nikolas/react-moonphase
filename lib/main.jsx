@@ -25,7 +25,7 @@ class Main extends React.Component {
                     min={-Math.PI}
                     max={Math.PI}
                     step={0.01}
-                    defaultValue={0}
+                    value={this.state.moonPhase}
                     onChange={this.handleInputChange.bind(this)} />
             </div>
         );

@@ -2,7 +2,6 @@
   "name": "react-moonphase",
   "version": "1.0.0",
   "description": "Display lunar phase with React and Pixi.js",
-  "private": true,
   "main": "main.js",
   "scripts": {
     "dev": "webpack --mode development --watch",

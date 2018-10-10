@@ -5,7 +5,6 @@
   "private": true,
   "main": "main.js",
   "scripts": {
-    "test": "jest",
     "dev": "webpack --mode development --watch",
     "build": "webpack --mode production",
     "eslint": "eslint src/*.js src/*.jsx"

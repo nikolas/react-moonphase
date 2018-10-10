@@ -10,15 +10,15 @@ Display lunar phase with React and Pixi.js
 
 
 ```
-    import MoonPhaseView from 'react-moonphase';
+import MoonPhaseView from 'react-moonphase';
 
-    // ...
+// ...
 
-    render() {
-        return (
-            <MoonPhaseView
-                moonPhase={this.state.moonPhase}
-                onMoonPhaseUpdate={this.onMoonPhaseUpdate.bind(this)} />
-        );
-    }
+render() {
+    return (
+        <MoonPhaseView
+            moonPhase={this.state.moonPhase}
+            onMoonPhaseUpdate={this.onMoonPhaseUpdate.bind(this)} />
+    );
+}
 ```

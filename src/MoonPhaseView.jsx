@@ -9,9 +9,6 @@ import {
 export default class MoonPhaseView extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            isHidden: false
-        };
         this.moon = null;
         this.radius = 100.5;
 
@@ -23,9 +20,6 @@ export default class MoonPhaseView extends React.Component {
         const timeSinceNewMoon = Math.round(
             getTimeSinceNewMoon(this.props.moonPhase));
         return <div>
-            <div style={{
-                visibility: this.state.isHidden ? 'hidden' : 'visible'
-            }}>
                 <select className="form-control form-control-sm"
                         onChange={this.onMoonPhaseUpdate.bind(this)}
                         value={phaseSlot}>
@@ -50,14 +44,6 @@ export default class MoonPhaseView extends React.Component {
                 <div className="text-center">
                     {formatInterval(timeSinceNewMoon)}
                 </div>
-            </div>
-            <div className="text-right">
-                <button type="button"
-                        onClick={this.onHideShowToggle.bind(this)}
-                        className="btn btn-primary btn-sm">
-                    {this.state.isHidden ? 'Show' : 'Hide'}
-                </button>
-            </div>
         </div>;
     }
     componentDidMount() {
@@ -179,9 +165,6 @@ export default class MoonPhaseView extends React.Component {
         this.props.onMoonPhaseUpdate(
             degToRad(forceNumber(e.target.value))
         );
-    }
-    onHideShowToggle() {
-        this.setState({isHidden: !this.state.isHidden});
     }
 }
 

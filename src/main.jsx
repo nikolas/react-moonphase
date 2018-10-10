@@ -12,10 +12,12 @@ class Main extends React.Component {
     }
     render() {
         return (
-            <div className="col-sm-4">
-                <MoonPhaseView
-                    moonPhase={this.state.moonPhase}
-                    onMoonPhaseUpdate={this.onMoonPhaseUpdate.bind(this)} />
+            <div className="col-sm-6">
+                <div className="text-center">
+                    <MoonPhaseView
+                        moonPhase={this.state.moonPhase}
+                        onMoonPhaseUpdate={this.onMoonPhaseUpdate.bind(this)} />
+                </div>
                 <input
                     type="range"
                     className="form-control-range"

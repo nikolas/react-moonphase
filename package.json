@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "webpack --mode development --watch",
     "build": "babel lib -d build",
+    "build-demo": "webpack --mode production",
     "eslint": "eslint lib/*.js lib/*.jsx"
   },
   "repository": {

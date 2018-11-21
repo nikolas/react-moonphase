@@ -2,7 +2,7 @@ NODE_MODULES ?= ./node_modules
 JS_SENTINAL ?= $(NODE_MODULES)/sentinal
 
 $(JS_SENTINAL): package.json
-	rm -rf $(NODE_MODULES)
+	rm -rf $(NODE_MODULES) package-lock.js
 	npm install
 	touch $(JS_SENTINAL)
 

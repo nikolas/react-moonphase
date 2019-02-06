@@ -1,3 +1,7 @@
+1.1.1 (2019-02-06)
+------------------
+* Fixed phase display bug in Chrome
+
 1.1.0 (2018-10-10)
 ------------------
 * Fixed import behavior and added usage instructions.

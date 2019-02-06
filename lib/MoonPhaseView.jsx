@@ -114,7 +114,7 @@ export default class MoonPhaseView extends React.Component {
             rightShade.scale.x = scale;
             rightShade.position.x = this.center.x - (scale * this.center.x);
 
-            if (phase >= 0.25) {
+            if (phase > 0.25) {
                 this.hiddenMoon.mask = this.rightShade;
                 this.hiddenMoon.visible = true;
             } else {
@@ -127,7 +127,7 @@ export default class MoonPhaseView extends React.Component {
             rightShade.scale.x = 1;
             rightShade.position.x = 0;
 
-            if (phase <= 0.75) {
+            if (phase < 0.75) {
                 this.hiddenMoon.mask = this.leftShade;
                 this.hiddenMoon.visible = true;
                 leftShade.scale.x = -scale;

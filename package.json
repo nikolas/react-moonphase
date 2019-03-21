@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/nikolas/react-moonphase#readme",
   "dependencies": {
-    "@babel/cli": "^7.0.0",
+    "@babel/cli": "^7.2.3",
     "pixi.js": "~4.8.2",
     "react": "~16.8.0",
     "react-dom": "~16.8.0"

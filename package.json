@@ -24,7 +24,7 @@
   "homepage": "https://github.com/nikolas/react-moonphase#readme",
   "dependencies": {
     "@babel/cli": "^7.0.0",
-    "pixi.js-legacy": "~5.0.0",
+    "pixi.js-legacy": "~5.1.0",
     "react": "~16.8.0",
     "react-dom": "~16.8.0"
   },

@@ -36,7 +36,7 @@
     "babel-eslint": "^10.0.0",
     "babel-loader": "^8.0.0",
     "eslint": "^7.32.0",
-    "eslint-plugin-react": "~7.22.0",
+    "eslint-plugin-react": "~7.32.2",
     "webpack": "^4.16.1",
     "webpack-cli": "^3.0.8"
   },

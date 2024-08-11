@@ -20,7 +20,7 @@ class Main extends React.Component {
                 </div>
                 <input
                     type="range"
-                    className="form-control-range"
+                    className="form-control-range w-100"
                     name="moonPhase"
                     min={-Math.PI}
                     max={Math.PI}

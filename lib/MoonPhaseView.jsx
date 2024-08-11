@@ -20,7 +20,7 @@ export default class MoonPhaseView extends React.Component {
         const timeSinceNewMoon = Math.round(
             getTimeSinceNewMoon(this.props.moonPhase));
         return <div>
-                <select className="form-control form-control-sm"
+                <select className="form-select"
                         onChange={this.onMoonPhaseUpdate.bind(this)}
                         value={phaseSlot}>
                     <option value={180}>New Moon</option>

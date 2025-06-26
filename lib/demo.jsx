@@ -1,3 +1,5 @@
+/* global document */
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import MoonPhaseView from './MoonPhaseView';

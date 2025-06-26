@@ -39,7 +39,7 @@
     "eslint": "^9.29.0",
     "eslint-plugin-react": "~7.37.2",
     "webpack": "^4.16.1",
-    "webpack-cli": "^3.0.8"
+    "webpack-cli": "^6.0.1"
   },
   "babel": {
     "presets": [

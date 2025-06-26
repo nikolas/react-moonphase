@@ -7,7 +7,7 @@ exports.roundToOnePlace = exports.radToDeg = exports.getTimeSinceNewMoon = expor
 /*
  * Force a value into a number.
  */
-var forceNumber = function forceNumber(n) {
+var forceNumber = exports.forceNumber = function forceNumber(n) {
   n = Number(n);
   if (isNaN(n) || typeof n === 'undefined') {
     n = 0;
@@ -18,21 +18,17 @@ var forceNumber = function forceNumber(n) {
 /*
  * Convert degrees to radians.
  */
-exports.forceNumber = forceNumber;
-var degToRad = function degToRad(degrees) {
+var degToRad = exports.degToRad = function degToRad(degrees) {
   return degrees * Math.PI / 180;
 };
-exports.degToRad = degToRad;
-var radToDeg = function radToDeg(radians) {
+var radToDeg = exports.radToDeg = function radToDeg(radians) {
   return radians * 180 / Math.PI;
 };
-exports.radToDeg = radToDeg;
-var getPercentIlluminated = function getPercentIlluminated(moonPhase) {
+var getPercentIlluminated = exports.getPercentIlluminated = function getPercentIlluminated(moonPhase) {
   var percent = (1 - Math.cos(moonPhase)) / 2;
   return percent * 100;
 };
-exports.getPercentIlluminated = getPercentIlluminated;
-var roundToOnePlace = function roundToOnePlace(n) {
+var roundToOnePlace = exports.roundToOnePlace = function roundToOnePlace(n) {
   return Math.round(n * 10) / 10;
 };
 
@@ -75,8 +71,7 @@ var roundToOnePlace = function roundToOnePlace(n) {
  * only 5 degrees around this orbit. The waxing and waning phases
  * take up the rest of the orbit.
  */
-exports.roundToOnePlace = roundToOnePlace;
-var getPhaseSlot = function getPhaseSlot(moonPhase) {
+var getPhaseSlot = exports.getPhaseSlot = function getPhaseSlot(moonPhase) {
   var phase = radToDeg(moonPhase);
 
   // New Moon
@@ -133,8 +128,7 @@ var getPhaseSlot = function getPhaseSlot(moonPhase) {
  * around the earth. So, this time interval can be computed with the
  * moonPhase value.
  */
-exports.getPhaseSlot = getPhaseSlot;
-var getTimeSinceNewMoon = function getTimeSinceNewMoon(phase) {
+var getTimeSinceNewMoon = exports.getTimeSinceNewMoon = function getTimeSinceNewMoon(phase) {
   return (phase + Math.PI) / (Math.PI * 2 / 708.734136);
 };
 
@@ -142,8 +136,7 @@ var getTimeSinceNewMoon = function getTimeSinceNewMoon(phase) {
  * Given a time interval in hours, shorten it by displaying days and
  * hours.
  */
-exports.getTimeSinceNewMoon = getTimeSinceNewMoon;
-var formatInterval = function formatInterval(i) {
+var formatInterval = exports.formatInterval = function formatInterval(i) {
   var quotient = Math.floor(i / 24);
   var remainder = i % 24;
   var quotientPlural = quotient === 1 ? '' : 's';
@@ -154,4 +147,3 @@ var formatInterval = function formatInterval(i) {
     return "".concat(remainder, " hour").concat(remainderPlural);
   }
 };
-exports.formatInterval = formatInterval;
